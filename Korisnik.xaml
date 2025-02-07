@@ -61,7 +61,7 @@
 
         <!-- Footer -->
         <Border Grid.Row="2" Background="#324969" Padding="10">
-            <TextBlock Text="© 2024 Ketering Lonac" FontSize="14" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Text="© 2025 Ketering Lonac" FontSize="14" Foreground="White" HorizontalAlignment="Center"/>
         </Border>
     </Grid>
 </Window>
