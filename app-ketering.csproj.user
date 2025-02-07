@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Administrator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DodajKorisnika.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Jela.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Koordinator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Korisnik.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Korpa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Porudzbina.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StatusModal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Administrator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DodajKorisnika.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Jela.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Koordinator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Korisnik.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Korpa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Porudzbina.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StatusModal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

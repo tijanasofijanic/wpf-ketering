@@ -1,0 +1,58 @@
+﻿<Window x:Class="app_ketering.Korpa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:app_ketering"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Korpa" Height="550" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Header -->
+            <RowDefinition Height="*"/>
+            <!-- Glavni sadržaj -->
+            <RowDefinition Height="Auto"/>
+            <!-- Footer -->
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#324969" Padding="10">
+            <TextBlock Text="KETERING LONAC" FontSize="36" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" FontFamily="Quicksand Medium"/>
+        </Border>
+        <Grid Grid.Row="1" Margin="10">
+            <ListView x:Name="KorpaItemsControl" HorizontalAlignment="Left" Width="780">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Image Source="{Binding Slika}" Height="100"/>
+                            <TextBlock Text="{Binding Naziv}" FontWeight="Bold" Foreground="#324969"/>
+                            <TextBlock Text="{Binding Cena, StringFormat={}{0} RSD}" Foreground="#324969"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10">
+                <TextBlock Text="Ukupna cena:" FontSize="18" FontWeight="Bold" Foreground="#324969"/>
+                <TextBlock x:Name="UkupnaCenaTextBlock" FontSize="18" FontWeight="Bold" Foreground="Red"/>
+                <Button Content="Završi kupovinu" Click="btnZavrsiKupovinu_Click" 
+                Width="200" Height="50" Background="#4CAF50" Foreground="White" 
+                FontSize="16" Margin="10"/>
+            </StackPanel>
+      
+            <Button Margin="709,-72,0,439" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+          ToolTip="Zatvori" x:Name="btnZatvori" Click="btnZatvori_Click" RenderTransformOrigin="7.341,0.202" HorizontalAlignment="Left">
+                <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" RenderTransformOrigin="1.019,-10.801"/>
+            </Button>
+           
+        </Grid>
+       
+        <!-- Footer -->
+        
+        <Border Grid.Row="2" Background="#324969" Padding="10">
+            <TextBlock Text="© 2024 Ketering Lonac" FontSize="14" Foreground="White" HorizontalAlignment="Center"/>
+        </Border>
+       
+    </Grid>
+</Window>
