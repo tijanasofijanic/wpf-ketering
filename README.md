@@ -1,4 +1,4 @@
-# 🍽️ WPF (C#) aplikacija ketering
+# WPF (C#) aplikacija za ketering
 
 Desktop aplikacija je namenjena za naručivanje jela u ketering službi. Ova aplikacija bi mogla olakšati rad keteringa i poručivanje hrane.
 
